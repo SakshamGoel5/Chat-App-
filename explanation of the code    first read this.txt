@@ -1,0 +1,101 @@
+sabse pahle backend folder banaya          ham pahle authentication part karenge
+    phir    cd backend
+            npm init -y
+            npm i express mongoose jsonwebtoken bcrypt cookie-parser dotenv cors
+    package.json me  "type": "module",
+        
+            package.json me   "main": "server.js"    karna h      
+           
+            to run server     cd backend     npx nodemon
+
+
+    koisa bhi route agar hit ho to mai chahta hu uska log hit ho jae   --> npm i morgan
+
+
+
+
+
+
+    cd.. 
+    npm create vite@latest
+        project name - frontend
+        select a framework - React
+        select a variant - JavaScript
+        cd frontend 
+        npm i 
+        npm run dev  
+
+
+
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+
+tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+index.css
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+npm run dev   in frontend folder
+
+
+
+
+backend me    npm i socket.io
+
+postman me new socket.io    phir   localhost:8000    phir connect pe click kar do 
+
+sabse pahle backend me server.js me code h
+phir frontend me config me socket.js
+phir screens m Project.js me 
+
+socket io me ham room ka use karenge   ham ek room ke andar kuch set of users daalte h  aur room ke andar agar koi bhi message bhejega to wo message khali un particular users ke paas phochoga jo us room ke andar h 
+
+
+
+
+
+
+
+google gemini  site pe jao     ai.google.dev    phir explore models in google ai studio
+phir get api key     api key ko   backend ki env file me daal do 
+
+phir gemini api docs pe chale jao     document me overview me node.js pe chale jao 
+backend me  npm i @google/generative-ai
+backend ke andar services ke andar ai.service.js  naam se file banai 
+backend me routes ke andar ai.route.js naam se file banai
+backend me controller ke andar ai.controller.js naam se file banai
+app.js me bhi ye route use karne padenge
+test karne ke liye postman use karo    http://localhost:8000/ai/get-result     params me     key prompt     value question
+
+ye jo gemini h ye aapko data .md file me return karta h 
+
+ab apni chat application pe mai chahta hu ki agar mai  @ai phir message likhu to mujhe uska anser ai se message ke form me receive ho jaye
+
+
+server.js me changes kare 
+
+agar ham ai se code karwae to ache se display ho uske liye  frontend me  npm i markdown-to-jsx
+Project.jsx me karenge
+
+      const markDown = (<MarkDown>{messageObject.message}</MarkDown>)      // jsx me ye direct aise kuch kaam nhi kar rha   ai se code genereate kara rhe h to format kharab aa rha h isliye hame useref wagera ka use karna padega 
+
+
+
+
+
